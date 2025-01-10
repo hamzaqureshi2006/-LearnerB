@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursera Simplified Homepage</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .expandable-courses {
+            background-color: #f9fbfc;
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .expand-btn {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">LearnerB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">For Business</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign In</a></li>
+                    <li class="nav-item"><a class="btn btn-primary nav-link text-white" href="#">Join for Free</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Learn Without Limits</h1>
+        <p>Access high-quality courses from the world’s best institutions.</p>
+        <a href="#" class="btn btn-primary">Join for Free</a>
+    </section>
+
+    <!-- Expandable Courses Section -->
+    <div class="container my-5 expandable-courses">
+        <h2 class="text-center">Career Skills That Work</h2>
+        <button class="btn btn-outline-primary expand-btn">Start 7-day Free Trial</button>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Google Prompting Essentials">
+                    <div class="card-body">
+                        <h5 class="card-title">Google Prompting Essentials</h5>
+                        <p class="text-muted">Beginner · Course</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Python for Everybody">
+                    <div class="card-body">
+                        <h5 class="card-title">Python for Everybody</h5>
+                        <p class="text-muted">Beginner · Specialization</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card course-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Prompt Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Prompt Engineering</h5>
+                        <p class="text-muted">Beginner · Specialization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-outline-primary expand-btn">Show 8 More</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Coursera Clone. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
